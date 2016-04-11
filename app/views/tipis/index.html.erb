@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Tipis</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Location</th>
+      <th>Description</th>
+      <th>Persons</th>
+      <th>Price</th>
+      <th>Image</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tipis.each do |tipi| %>
+      <tr>
+        <td><%= tipi.title %></td>
+        <td><%= tipi.location %></td>
+        <td><%= tipi.description %></td>
+        <td><%= tipi.persons %></td>
+        <td><%= tipi.price %></td>
+        <td><%= tipi.image %></td>
+        <td><%= link_to 'Show', tipi %></td>
+        <td><%= link_to 'Edit', edit_tipi_path(tipi) %></td>
+        <td><%= link_to 'Destroy', tipi, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tipi', new_tipi_path %>

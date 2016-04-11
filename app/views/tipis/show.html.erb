@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @tipi.title %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @tipi.location %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @tipi.description %>
+</p>
+
+<p>
+  <strong>Persons:</strong>
+  <%= @tipi.persons %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @tipi.price %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @tipi.image %>
+</p>
+
+<%= link_to 'Edit', edit_tipi_path(@tipi) %> |
+<%= link_to 'Back', tipis_path %>
