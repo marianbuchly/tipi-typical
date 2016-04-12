@@ -12,6 +12,15 @@
 <div class="header">
 </div>
 
+<% if current_user %>
+
+<%= link_to "Log out", user_path(current_user), method: :delete %>
+<% else %>
+
+<p>Please <%= link_to "register", new_user_path %> first.</p>
+
+<% end %>
+
 <div class="content">
   <div class="background">
   </div>
