@@ -3,14 +3,18 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-def create
-  @user = User.new(user_params)
+  def create
+     @user = User.new(user_params)
 
-    if @user.save
-      redirect_to root_path, notice: "Hi, #{@user.name}!"
-    else
-      render :new
-    end
+     if @user.save
+       # Store the user in the session
+       session[:user_id] = @user.id
+
+       redirect_to root_path, notice: "Hi, #{@user.name}!"
+     else
+       render :new
+     end
+   end
 
 private
 
