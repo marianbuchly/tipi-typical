@@ -10,6 +10,6 @@ class ApplicationController < ActionController::Base
   def current_user
     return unless session[:user_id].present?
 
-   User.find(session[:user_id])
-    end
+    User.find(session[:user_id])
   end
+end

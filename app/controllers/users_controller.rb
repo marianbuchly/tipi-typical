@@ -16,6 +16,11 @@ class UsersController < ApplicationController
      end
    end
 
+   def destroy
+     session.delete(:user_id)
+     redirect_to root_path, notice: "You are successfully logged out"
+   end
+
 private
 
   def user_params
