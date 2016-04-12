@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Rent a tipi!</h1>
+
 <!--
 <table>
   <thead>
@@ -23,14 +23,20 @@
   <% end %>
 
     <% @tipis.each do |tipi| %>
-<div class="content">
-        <%= tipi.title %><br>
-        <%= tipi.location %><br>
-        <%= tipi.description %><br>
-        <%= tipi.persons %><br>
-        <%= tipi.price %><br>
-        <%= image_tag tipi.image, size: "200x150" %><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8" .col-md-8>
+            <%= tipi.title %><br>
+            <%= tipi.location %><br>
+            <%= tipi.description %><br>
+            <%= tipi.persons %><br>
+            <%= tipi.price %><br>
         </div>
+              <div class="col-md-4" .col-md-4>
+                  <%= image_tag tipi.image, size: "350x200" %><br>
+              </div>
+    </div>
+</div>
         <br>
 
     <% end %>
