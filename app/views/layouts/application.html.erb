@@ -9,13 +9,18 @@
 </head>
 <body>
 
-<div class="header">
+<div class="jumbotron">
+  <h1>Rent a Tipi!</h1>
 </div>
 
-<% if current_user %>
+<div class="btn-group">
+  <% if current_user %>
 
-<%= link_to "Log out", user_path(current_user), method: :delete %>
-<% else %>
+<!-- <%= link_to "Log out", user_path(current_user), method: :delete %> -->
+<%= link_to "Log out",user_path(current_user), method: :delete, class: "btn btn-primary btn-lg active" %>
+
+  <% else %>
+</div>
 
 <p>Please <%= link_to "register", new_user_path %> first.</p>
 
@@ -25,6 +30,8 @@
   <div class="background">
   </div>
 </div>
+
+<div id="main">
 
 <%= yield %>
 
