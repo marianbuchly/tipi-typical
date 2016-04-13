@@ -21,25 +21,26 @@
   <% else %>
   <h1>Welcome</h1>
   <% end %>
-
-    <% @tipis.each do |tipi| %>
 <div class="container">
-    <div class="row">
-        <div class="col-md-8" .col-md-8>
-            <p>Name:<%= tipi.title %></p>
-            <p>Location:<%= tipi.location %></p>
-            <p>Description:<%= tipi.description %></p>
-            <p>Persons:<%= tipi.persons %></p>
-            <p>Price:<%= tipi.price %></p>
-        </div>
-              <div class="col-md-4" .col-md-4>
-                  <%= image_tag tipi.image, size: "350x200" %><br>
-              </div>
-    </div>
-</div>
-        <br>
+    <% @tipis.each do |tipi| %>
+  <div class="tipi-box">
+      <div class="row">
+          <div class="col-xs-6">
+              <p>Name:<%= tipi.title %></p>
+              <p>Location:<%= tipi.location %></p>
+              <p>Description:<%= tipi.description %></p>
+              <p>Persons:<%= tipi.persons %></p>
+              <p>Price:<%= tipi.price %></p>
+          </div>
 
+          <!-- img-responsive makes the image adapt to vw-size -->
+
+          <div class="col-xs-6">
+              <%= image_tag(tipi.image, class: "tipi-pic img-responsive")%>
+          </div>
+      </div>
+  </div>
+  <br>
     <% end %>
-
-
-<br>
+  <br>
+</div>
