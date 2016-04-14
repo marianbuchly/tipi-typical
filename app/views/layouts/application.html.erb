@@ -24,14 +24,14 @@
 <div class="btn-group">
   <% if current_user %>
 
-<!-- <%= link_to "Log out", user_path(current_user), method: :delete %> -->
-<%= link_to "Log out",user_path(current_user), method: :delete, class: "btn btn-primary btn-lg active" %>
+
+<%= link_to "sign out", destroy_user_session_path, method: :delete, class: "btn btn-primary btn-lg active" %>
 
   <% else %>
 </div>
 
-<p>Please <%= link_to "register", new_user_path %> first.</p>
-
+<p>Please <%= link_to "register", new_user_registration_path %> first.</p>
+<p>Please <%= link_to "sign in",  user_session_path %> first.</p>
 <% end %>
 
 <div class="content">

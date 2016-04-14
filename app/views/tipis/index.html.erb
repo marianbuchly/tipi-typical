@@ -40,7 +40,8 @@
           <!-- img-responsive makes the image adapt to vw-size -->
 
           <div class="col-xs-6">
-              <%= image_tag(tipi.image, class: "tipi-pic img-responsive")%>
+              <%= link_to image_tag(tipi.image, class: "tipi-pic img-responsive"), tipi_path( tipi.id) %>
+              
           </div>
       </div>
   </div>
