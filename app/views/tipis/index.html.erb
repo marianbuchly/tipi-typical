@@ -26,11 +26,15 @@
   <div class="tipi-box">
       <div class="row">
           <div class="col-xs-6">
-              <p>Name:<%= tipi.title %></p>
-              <p>Location:<%= tipi.location %></p>
-              <p>Description:<%= tipi.description %></p>
-              <p>Persons:<%= tipi.persons %></p>
-              <p>Price:<%= tipi.price %></p>
+            <br>
+              <p><span><h2><%= tipi.title %></h2></span><p>
+              <p><span><h3><%= tipi.location %></h3></span></p>
+              <hr>
+              <p><%= tipi.description %></p>
+                <ul id="list-horizontal" class="no-bullets" >
+                  <li><p>Persons:<%= tipi.persons %></p></li>
+                  <li><p>Price:<%= tipi.price %></p></li>
+                </ul>
           </div>
 
           <!-- img-responsive makes the image adapt to vw-size -->
