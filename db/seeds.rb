@@ -1,8 +1,12 @@
-# This file should contain all the record creation needed to seed the database with its default values.
+User.delete_all
+
+frank = User.create( email: 'frank@ex.com', password: 'abcd1234' )
+alice = User.create( email: 'alice@ex.com', password: 'abcd1234' )
+anton = User.create( email: 'anton@ex.com', password: 'abcd1234' )# This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #
 # Examples:
-#
+Tipi.delete_all
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Tipi.create( {title: "Tipi Wan", location: "Blue Lagoon, Iceland", description: "A cozy tipi for one, in the beautiful Blue Lagoon area.", persons: "1", price: "€ 39", image: "Tipiwan.jpg"} )
