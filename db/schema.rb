@@ -16,6 +16,19 @@ ActiveRecord::Schema.define(version: 20160414135441) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "bookings", force: :cascade do |t|
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.integer  "length"
+    t.integer  "resource_id"
+  end
+
+  add_index "bookings", ["resource_id"], name: "index_bookings_on_resource_id", using: :btree
+
+  create_table "resources", force: :cascade do |t|
+    t.string "name"
+  end
+
   create_table "tipis", force: :cascade do |t|
     t.string   "title"
     t.string   "location"
@@ -49,5 +62,6 @@ ActiveRecord::Schema.define(version: 20160414135441) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
+  add_foreign_key "bookings", "resources"
   add_foreign_key "tipis", "users"
 end

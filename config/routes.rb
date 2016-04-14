@@ -6,6 +6,12 @@ Rails.application.routes.draw do
 
   get 'tipis/index'
 
+  get "about" => "welcome#about"
+
+  get 'rentout' => 'welcome#rentout'
+
+  get 'contact' => 'welcome#contact'
+
   get 'user_tipis/:user_id' => 'tipis#user', as: :user_tipis
 
   resources :tipis
