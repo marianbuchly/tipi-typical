@@ -4,3 +4,7 @@
 <% @tipis.each do |tipi| %>
      <h4><%= link_to tipi.title, tipi_path(tipi.id) %></h4>
 <% end %>
+
+
+<%= link_to 'New', new_tipi_path(@tipi) %> |
+<%= link_to 'Back', tipis_path %>
