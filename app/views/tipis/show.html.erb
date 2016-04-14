@@ -26,9 +26,13 @@
 </p>
 
 <p>
-  
+
   <%= image_tag @tipi.image, size: "500x350" %>
 </p>
+
+<%= month_calendar(attribute: :starts_at) do |date| %>
+  <%= date %>
+<% end %>
 
 <%= link_to 'Edit', edit_tipi_path(@tipi) %> |
 <%= link_to 'Back', tipis_path %>

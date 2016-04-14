@@ -6,6 +6,12 @@ Rails.application.routes.draw do
 
   get 'tipis/index'
 
+  get "about" => "welcome#about"
+
+  get 'rentout' => 'welcome#rentout'
+
+  get 'contact' => 'welcome#contact'
+
   resources :tipis
   resources :users, only: [:new, :create, :destroy]
   # The priority is based upon order of creation: first created -> highest priority.
@@ -15,7 +21,7 @@ Rails.application.routes.draw do
   root 'tipis#index'
 
 
- 
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
