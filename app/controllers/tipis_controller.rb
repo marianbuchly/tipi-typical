@@ -61,6 +61,11 @@ class TipisController < ApplicationController
     end
   end
 
+  def user
+    @user = User.find(params[:user_id])
+    @tipis = Tipi.where(user: @user).order(created_at: :desc)
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_tipi
