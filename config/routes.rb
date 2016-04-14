@@ -6,8 +6,10 @@ Rails.application.routes.draw do
 
   get 'tipis/index'
 
+  get 'user_tipis/:user_id' => 'tipis#user', as: :user_tipis
+
   resources :tipis
-  resources :users, only: [:new, :create, :destroy]
+  resources :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -15,7 +17,7 @@ Rails.application.routes.draw do
   root 'tipis#index'
 
 
- 
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
