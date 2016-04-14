@@ -6,13 +6,9 @@ class ApplicationController < ActionController::Base
 
 
  # Make the controller method available in the views
- helper_method :current_user
 
 
 
-  def current_user
-    return unless session[:user_id].present?
 
-    User.find(session[:user_id])
-  end
+
 end
