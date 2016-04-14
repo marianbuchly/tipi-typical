@@ -6,15 +6,13 @@ Rails.application.routes.draw do
 
   get 'tipis/index'
 
-<<<<<<< HEAD
   get "about" => "welcome#about"
 
   get 'rentout' => 'welcome#rentout'
 
   get 'contact' => 'welcome#contact'
-=======
+
   get 'user_tipis/:user_id' => 'tipis#user', as: :user_tipis
->>>>>>> 8f6ae0b673191eb71175c30c1f87995ed3519773
 
   resources :tipis
   resources :users
