@@ -26,8 +26,8 @@
 </p>
 
 <p>
-  <strong>Image:</strong>
-  <%= @tipi.image %>
+  
+  <%= image_tag @tipi.image, size: "500x350" %>
 </p>
 
 <%= link_to 'Edit', edit_tipi_path(@tipi) %> |
