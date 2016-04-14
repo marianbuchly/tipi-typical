@@ -1,19 +1,4 @@
 <p id="notice"><%= notice %></p>
-
-
-<!--
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Location</th>
-      <th>Description</th>
-      <th>Persons</th>
-      <th>Price</th>
-      <th>Image</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead> -->
   <% if current_user %>
   <h2>Welcome, <%= current_user.name %></h2>
   <p>Glad you could join us.</p>
@@ -21,31 +6,54 @@
   <% else %>
   <h1>Welcome</h1>
   <% end %>
+
 <div class="container">
     <% @tipis.each do |tipi| %>
   <div class="tipi-box">
-      <div class="row">
-          <div class="col-xs-6">
-            <br>
-              <p><span><h2><%= tipi.title %></h2></span><p>
-              <p><span><h3><%= tipi.location %></h3></span></p>
-              <hr>
-              <p><%= tipi.description %></p>
-                <ul id="list-horizontal" class="no-bullets" >
-                  <li><p>Persons:<%= tipi.persons %></p></li>
-                  <li><p>Price:<%= tipi.price %></p></li>
-                </ul>
-          </div>
-
-          <!-- img-responsive makes the image adapt to vw-size -->
-
-          <div class="col-xs-6">
-              <%= link_to image_tag(tipi.image, class: "tipi-pic img-responsive"), tipi_path( tipi.id) %>
-              
-          </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <p><span><h2><%= tipi.title %></h2></span><p>
       </div>
+      <div class="col-lg-12">
+        <p><span class="location"><%= tipi.location %></span></p>
+        <hr>
+      </div>
+      <div class="col-xs-6">
+        <br>
+        <hr>
+        <p class="tipi-description"><%= tipi.description %></p>
+      </div>
+      <div class="col-xs-6">
+        <%= image_tag(tipi.image, class: "tipi-pic img-responsive")%>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <ul id="list-horizontal" class="no-bullets price-persons" >
+          <br>
+          <li><p>Persons:<%= tipi.persons %></p></li>
+          |
+          <li><p>Price:<%= tipi.price %></p></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
   </div>
   <br>
     <% end %>
   <br>
 </div>
+Status API Training Shop Blog About
