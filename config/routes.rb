@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   get 'contact' => 'welcome#contact'
 
+  get 'footer' => 'welcome#footer'
+
   get 'user_tipis/:user_id' => 'tipis#user', as: :user_tipis
 
   resources :tipis
