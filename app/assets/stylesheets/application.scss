@@ -106,7 +106,7 @@ h3 {
   }
 }
 .big-box {
-    background: rgba(250, 250, 250, 0.4) !important;
+    background: rgba(250, 250, 250, 0.55) !important;
     background: #f2f2f2;
     margin-top: 15%;
     border-radius: 5px;
@@ -202,4 +202,27 @@ h3 {
     .title-box h1 {
         font-size: 55px !important;
     }
+}
+
+a:link {
+    color: #131339;
+}
+
+/* visited link */
+a:visited {
+    color: #131339;
+}
+
+/* mouse over link */
+a:hover {
+    color: #333399;
+}
+
+/* selected link */
+a:active {
+    color: #9f9fdf;
+}
+
+.visible {
+
 }
