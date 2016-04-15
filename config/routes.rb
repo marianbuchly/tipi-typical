@@ -14,6 +14,8 @@ Rails.application.routes.draw do
 
   get 'user_tipis/:user_id' => 'tipis#user', as: :user_tipis
 
+  get 'responds' => 'tipis#responds'
+
   resources :tipis
   resources :users
   # The priority is based upon order of creation: first created -> highest priority.
