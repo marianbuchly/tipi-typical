@@ -1,6 +1,4 @@
 <p id="notice"><%= notice %></p>
-
-
   <% if current_user %>
   <h2>Welcome, <%= current_user.name %></h2>
   <p>Glad you could join us.</p>
@@ -12,6 +10,7 @@
 <div class="container">
     <% @tipis.each do |tipi| %>
   <div class="tipi-box">
+<<<<<<< HEAD
     <div class="row">
       <div class="col-lg-12">
         <p><span><h2><%= tipi.title %></h2></span><p>
@@ -40,6 +39,14 @@
         </ul>
       </div>
     </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+=======
       <div class="row">
           <div class="col-xs-6">
             <br>
@@ -50,7 +57,6 @@
                 <ul id="list-horizontal" class="no-bullets" >
                   <li><p>Persons:<%= tipi.persons %></p></li>
                   <li><p>Price:<%= tipi.price %></p></li>
-                  <li><p>Owner:<%= tipi.user.handle%></p></li>
                 </ul>
           </div>
 
@@ -60,6 +66,7 @@
               <%= link_to image_tag(tipi.image, class: "tipi-pic img-responsive"), tipi_path( tipi.id) %>
 
           </div>
+>>>>>>> cd88d7b2f5c7cb973d44f117cef78fb8e1c31854
       </div>
     </div>
 

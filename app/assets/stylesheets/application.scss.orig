@@ -5,7 +5,10 @@
 @import "bootstrap-sprockets";
 @import "welcome";
 @import "scaffolds";
+<<<<<<< HEAD
+=======
   
+>>>>>>> cd88d7b2f5c7cb973d44f117cef78fb8e1c31854
 body {
     background: url("http://www.magicaltipis.co.uk/files/6213/9465/4289/Magical_Camping_LR_Night-16.jpg") center center fixed;
     background-size: cover;
@@ -20,21 +23,16 @@ body {
     padding: 0px;
     text-align: center;
 }
-
 #list-horizontal li {
     display: inline-block;
 }
-
-
 .title-box {
     margin-top: 5%;
     opacity: 1;
 }
-
 .title-box h1 {
     font-size: 150px !important;
 }
-
 .rent-title {
     color: white;
 }
@@ -57,7 +55,6 @@ h3 {
     width: 98%;
     box-shadow: 1px 1px 2px #333333;
 }
-
 .login-field input {
     min-width: 300px;
     width: 60%;
@@ -73,12 +70,9 @@ h3 {
 }
 
 // removes bullets
-
 .no-bullets {
     list-style-type: none;
 }
-
-
 .tipi-pic {
     float: right;
     border-radius: 3px !important;
@@ -96,11 +90,6 @@ h3 {
     border-radius: 5px;
 }
 
-@media screen and (max-width: 480px) {
-  .title-box h1 {
-      font-size: 75px !important;
-  }
-}
 .big-box {
     background: rgba(250, 250, 250, 0.4) !important;
     background: #f2f2f2;
@@ -111,7 +100,6 @@ h3 {
     overflow: hidden;
     margin-bottom: 1%
 }
-
 .tipi-box {
     background: rgba(253, 253, 253, 0.85) !important;
     border-radius: 3px;
@@ -128,12 +116,6 @@ h3 {
     background: #404040;
     margin-bottom: 0px;
     height: 50px;
-  background: rgba(253, 253, 253, 0.85) !important;
-  border-radius: 3px;
-  margin: 20px;
-  padding-bottom: 10px;
-  box-shadow: 1px 1px 2px #333333;
-  margin: auto;
 }
 
 .bottom-text {
