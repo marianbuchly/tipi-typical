@@ -5,6 +5,24 @@
      <h4><%= link_to tipi.title, tipi_path(tipi.id) %></h4>
 <% end %>
 
+<br>
+<p>Do you any have questions about renting a tipi or do you want ask something else to the owner? Please use this contact form.</p>
+<br>
+<br>
+<form>
+  First name:<br>
+  <input type="text" name="firstname"><br>
+  Last name:<br>
+  <input type="text" name="lastname"><br>
+  Email address:<br>
+  <input type="text" name="email"><br>
+  Message:<br>
+  <input id="message" type="text" name="message"><br><br>
+  <%= link_to "submit", responds_path, class: "btn btn-primary btn-lg active"  %>
+</form>
+
+<br>
+<br>
 
 <%= link_to 'New', new_tipi_path(@tipi) %> |
 <%= link_to 'Back', tipis_path %>
