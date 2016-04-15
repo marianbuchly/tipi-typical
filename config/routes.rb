@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
+
   get 'users/index'
 
   get 'users/show'
@@ -11,6 +12,8 @@ Rails.application.routes.draw do
   get 'rentout' => 'welcome#rentout'
 
   get 'contact' => 'welcome#contact'
+
+  get 'profilepage' => 'welcome#profilepage'
 
   get 'footer' => 'welcome#footer'
 
