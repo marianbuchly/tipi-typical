@@ -3,13 +3,13 @@
 <p>Do you any have questions about renting a tipi or do you want to know more about the posibilities of renting out your own tipi? Fill out this form and we'll contact you within 24 hours.</p>
 <br>
 <br>
-<form>
+<form class="visible">
   First name:<br>
-  <input type="text" name="firstname"><br>
+  <input type="text" name="firstname" placeholder="i.e. John" ><br>
   Last name:<br>
-  <input type="text" name="lastname"><br>
+  <input type="text" name="lastname" placeholder="i.e. Doe"><br>
   Email address:<br>
-  <input type="text" name="email"><br>
+  <input type="text" name="email" placeholder="i.e. johndoe@mail.com"><br>
   Message:<br>
   <input id="message" type="text" name="message"><br><br>
   <%= link_to "submit", responds_path, class: "btn btn-primary btn-lg active"  %>
