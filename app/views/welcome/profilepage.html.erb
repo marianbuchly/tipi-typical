@@ -1,0 +1,5 @@
+<h1>Welcome to your profile page, <%= current_user.handle %></h1>
+
+<%= link_to "Edit your profile", edit_user_registration_path, class: "btn btn-primary btn-lg active" %><br><br>
+<%= link_to "Change your password", edit_user_password_path, class: "btn btn-primary btn-lg active" %><br><br>
+<%= link_to "Add new tipi", new_tipi_path, class: "btn btn-primary btn-lg active" %>

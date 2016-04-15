@@ -24,5 +24,9 @@
 <br>
 <br>
 
+<% if current_user %>
 <%= link_to 'New', new_tipi_path(@tipi) %> |
 <%= link_to 'Back', tipis_path %>
+<% else %>
+<%= link_to 'Back', tipis_path %>
+<% end %>
