@@ -5,6 +5,10 @@ class TipisController < ApplicationController
   # GET /tipis.json
   def index
     @tipis = Tipi.all
+
+    if params[:search]
+      @tipis = Tipi.search(params[:search]).order("created_at DESC")
+    end
   end
 
   # GET /tipis/1
