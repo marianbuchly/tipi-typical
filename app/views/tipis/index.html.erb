@@ -1,23 +1,7 @@
 <p id="notice"><%= notice %></p>
-
-
-<!--
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Location</th>
-      <th>Description</th>
-      <th>Persons</th>
-      <th>Price</th>
-      <th>Image</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead> -->
   <% if current_user %>
   <h2>Welcome, <%= current_user.name %></h2>
   <p>Glad you could join us.</p>
-
   <% else %>
   <h1>Welcome</h1>
   <% end %>
@@ -34,14 +18,12 @@
                 <ul id="list-horizontal" class="no-bullets" >
                   <li><p>Persons:<%= tipi.persons %></p></li>
                   <li><p>Price:<%= tipi.price %></p></li>
+                  <li><p>Owner:<%= tipi.user.handle%></p></li>
                 </ul>
           </div>
-
           <!-- img-responsive makes the image adapt to vw-size -->
-
           <div class="col-xs-6">
               <%= link_to image_tag(tipi.image, class: "tipi-pic img-responsive"), tipi_path( tipi.id) %>
-
           </div>
       </div>
   </div>
