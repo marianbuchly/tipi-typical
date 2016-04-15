@@ -11,10 +11,9 @@
     <div id="navbar" class="navbar-collapse collapse">
        <ul class="nav navbar-nav">
           <li><a href="http://localhost:3000/">Home</a></li>
-          <li><a href="#">Types of Tipis</a></li>
-          <li><a href="#">Rent a Tipi</a></li>
-          <li><a href="#">Rent Out Your Tipi</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><%= link_to "About", about_path %></li>
+          <li><%= link_to "Rent out your tipi", rentout_path %></li>
+          <li><%= link_to "Contact us", contact_path %></li>
        </ul>
        <!-- <a href="#">Inbox <span class="badge">42</span></a> -->
        <ul class="nav navbar-nav navbar-right">
