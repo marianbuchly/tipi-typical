@@ -1,29 +1,51 @@
-form {
-    padding-left: 30px;
-    font-family: 'Muli', sans-serif;
-
-  }
-
-#message {
-  width: 60vw;
-  height: 150px;
+<<<<<<< HEAD
+=======
+body {
+      background-color:white ;
+//   color: darkblue;
+//   font-family: verdana, arial, helvetica, sans-serif;
+//   font-size: 13px;
+//   line-height: 18px;
 }
-
+// .content {
+//   back#304B7A
+//   width: 706px;
+//
+//
+// }
+//
+// .header{
+  // height: 450px;
+  // //width: 100vw;
+  // background-image: url("http://www.magicaltipis.co.uk/files/6213/9465/4289/Magical_Camping_LR_Night-16.jpg");
+  // -webkit-background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center;
+// }
+// <<<<<<< HEAD
+//nav bar
 .container-fluid {
 font-family: "Muli";
 }
 .breadcrumb{
 }
-
+//
+// =======
+// >>>>>>> c7f61c20417e7dbc245f201e8139f2cc5ba68246
 .jumbotron {
 height: 600px;
 width: 100%;
 background: url("http://www.magicaltipis.co.uk/files/6213/9465/4289/Magical_Camping_LR_Night-16.jpg") center center fixed;
-
+// -webkit-background-size: cover;
+// -moz-background-size: cover;
+// -o-background-size: cover;
 background-size: cover;
 overflow: hidden;
 background-position: bottom;
-
+// font-family: 'Muli', sans-serif;
+// text-align: center;
+//color: white;
+// font-size: 150px;
 }
 .jumbotron h1 {
   color: white;
@@ -111,6 +133,14 @@ footer {
     display: block;
 }
 .footer a {
+    color: #78828D
+}
+.supportLi h4 {
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: normal;
+    margin-bottom: 0 !important;
+    padding-bottom: 0;
 }
 .newsletter-box input#appendedInputButton {
     background: #FFFFFF;
@@ -154,6 +184,14 @@ footer {
     margin: 0 8px 0 0;
     padding: 0;
     text-align: center;
+    width: 36px;
+    transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+}
+.social li:hover {
     transform: scale(1.15) rotate(360deg);
     -webkit-transform: scale(1.1) rotate(360deg);
     -moz-transform: scale(1.1) rotate(360deg);
@@ -187,10 +225,78 @@ footer {
 form {
     padding-left: 30px;
     font-family: 'Muli', sans-serif;
-
+    
   }
 
 #message {
   width: 60vw;
   height: 150px;
 }
+// }
+//
+// p, ol, ul, td {
+//   font-family: verdana, arial, helvetica, sans-serif;
+//   font-size: 13px;
+//   line-height: 18px;
+// }
+//
+// pre {
+//   background-color: #eee;
+//   padding: 10px;
+//   font-size: 11px;
+// }
+//
+// a {
+//   color: #000;
+//
+//   &:visited {
+//     color: #666;
+//   }
+//
+//   &:hover {
+//     color: #fff;
+//     background-color: #000;
+//   }
+// }
+//
+// div {
+//   &.field, &.actions {
+//     margin-bottom: 10px;
+//   }
+// }
+//
+// #notice {
+//   color: green;
+// }
+//
+// .field_with_errors {
+//   padding: 2px;
+//   background-color: red;
+//   display: table;
+// }
+//
+// #error_explanation {
+//   width: 450px;
+//   border: 2px solid red;
+//   padding: 7px;
+//   padding-bottom: 0;
+//   margin-bottom: 20px;
+//   background-color: #f0f0f0;
+//
+//   h2 {
+//     text-align: left;
+//     font-weight: bold;
+//     padding: 5px 5px 5px 15px;
+//     font-size: 12px;
+//     margin: -7px;
+//     margin-bottom: 0px;
+//     background-color: #c00;
+//     color: #fff;
+//   }
+//
+//   ul li {
+//     font-size: 12px;
+//     list-style: square;
+//   }
+// }
+>>>>>>> cd88d7b2f5c7cb973d44f117cef78fb8e1c31854
